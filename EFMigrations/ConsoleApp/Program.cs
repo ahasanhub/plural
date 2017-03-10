@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
@@ -12,17 +13,18 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            var context = new TwitterContext();
+            var context = new TwitterContext(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             CreateDatabase(context);
         }
 
         private static void CreateDatabase(DbContext context)
         {
-            if (context.Database.Exists())
-            {
-                context.Database.Delete();
-            }
-           context.Database.Create();
+            var co = context.Database.Connection;
+            //if (context.Database.Exists())
+            //{
+            //    context.Database.Delete();
+            //}
+           context.Database.Initialize(true);
         }
     }
 }

@@ -4,8 +4,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DomainClasses
   {
+    public class TwitterRevenue
+    {
+        public int Id { get; set; }
+        public decimal Amount { get; set; }
+        public DateTime Date { get; set; }
+        public string Source { get; set; }
+    }
 
-  public class Alias : IValidatableObject
+    public class Alias : IValidatableObject
     {
       public Alias()
       {
@@ -14,7 +21,7 @@ namespace DomainClasses
       public int Id { get; set; }
       [Required]
       public string Name { get; set; }
-  //    public string NewProp { get; set; }
+      public string NewProp { get; set; }
   
       [StringLength(10)]
       public string Experience { get; set; }

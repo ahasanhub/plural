@@ -49,11 +49,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201703100954058_InitialCreate.cs" />
+    <Compile Include="Migrations\201703100954058_InitialCreate.Designer.cs">
+      <DependentUpon>201703100954058_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703101257282_Edit1.cs" />
+    <Compile Include="Migrations\201703101257282_Edit1.Designer.cs">
+      <DependentUpon>201703101257282_Edit1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703101259138_Edit2.cs" />
+    <Compile Include="Migrations\201703101259138_Edit2.Designer.cs">
+      <DependentUpon>201703101259138_Edit2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703101300575_Edit3.cs" />
+    <Compile Include="Migrations\201703101300575_Edit3.Designer.cs">
+      <DependentUpon>201703101300575_Edit3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703101322074_Edit4.cs" />
+    <Compile Include="Migrations\201703101322074_Edit4.Designer.cs">
+      <DependentUpon>201703101322074_Edit4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwitterContext.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +81,23 @@
       <Project>{f50c31e0-b8c5-4241-9dba-ddcc58410940}</Project>
       <Name>DomainClasses</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201703100954058_InitialCreate.resx">
+      <DependentUpon>201703100954058_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703101257282_Edit1.resx">
+      <DependentUpon>201703101257282_Edit1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703101259138_Edit2.resx">
+      <DependentUpon>201703101259138_Edit2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703101300575_Edit3.resx">
+      <DependentUpon>201703101300575_Edit3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703101322074_Edit4.resx">
+      <DependentUpon>201703101322074_Edit4.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
