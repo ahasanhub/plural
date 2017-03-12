@@ -16,36 +16,23 @@ namespace NinjaDomain.ConsoleApp
         static void Main(string[] args)
         {
             //Database.SetInitializer(new NullDatabaseInitializer<NinjaContext>());
-            InsertNinja();
-            // InsertMultipleNinjas();
+            //InsertNinja();
+            //InsertMultipleNinjas();
             //SimpleNinjaQueries();
             //QueryAndUpdateNinja();
-            //DeleteNinja();
-            //RetrieveDataWithFind();
-            //RetrieveDataWithStoredProc();
-            //DeleteNinjaWithKeyValue();
-            //DeleteNinjaViaStoredProcedure();
             //QueryAndUpdateNinjaDisconnected();
-
-            //InsertNinjaWithEquipment();
-            //SimpleNinjaGraphQuery();
-            //ProjectionQuery();
-            //QueryAndUpdateNinjaDisconnected();
-
-            //ReseedDatabase();
+            RetrieveDataWithFind();
             Console.ReadKey();
         }
-
-
 
         private static void InsertNinja()
         {
             var ninja = new Ninja
             {
-                Name = "SampsonSan",
+                Name = "SampsonSan1",
                 ServedInOniwaban = false,
                 DateOfBirth = new DateTime(2008, 1, 28),
-                Clan = new Clan { ClanName = "Ahasan"}
+                Clan = new Clan { ClanName = "Habib"}
 
             };
             using (var context = new NinjaContext(ConnsectionString))
