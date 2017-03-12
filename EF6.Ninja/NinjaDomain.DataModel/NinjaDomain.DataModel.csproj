@@ -61,6 +61,10 @@
     <Compile Include="Migrations\201703101859315_Edit1.Designer.cs">
       <DependentUpon>201703101859315_Edit1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703121633015_Edit2.cs" />
+    <Compile Include="Migrations\201703121633015_Edit2.Designer.cs">
+      <DependentUpon>201703121633015_Edit2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NinjaContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703101859315_Edit1.resx">
       <DependentUpon>201703101859315_Edit1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703121633015_Edit2.resx">
+      <DependentUpon>201703121633015_Edit2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
