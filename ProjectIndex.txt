@@ -1,0 +1,6 @@
+1. Globalmantics - Integration Testing of Entity Framework Applications(Not done yet)
+ Link - https://app.pluralsight.com/library/courses/entity-framework-applications-integration-testing/table-of-contents
+2. Build Your Own Bootstrap Business Application Template in MVC (Note done yet)
+Link - https://app.pluralsight.com/library/courses/bootstrap-business-application-template-mvc/table-of-contents
+3. OAuth2 and OpenID Connect Strategies for AngularJS and ASP.NET (Not done yet)
+Link - https://app.pluralsight.com/library/courses/oauth2-openid-connect-angular-aspdotnet/table-of-contents
